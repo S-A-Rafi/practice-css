@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            background-color: #36474f;
+        }
+        header{
+            position: absolute;
+            width: 100%;
+            min-height: 66px;
+            background-color: tomato;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 100px;
+
+        }
+        header .logo{
+            color: white;
+            font-size: 1.75em;
+            font-weight: 600px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 23px 20px;
+            
+        }
+        .logo:hover{
+            background-color: rgb(228,66,37);
+        }
+        header ul{
+            position: relative;
+        }
+        header ul li{
+            position: relative;
+            float: left;
+            list-style: none;
+        }
+        header ul li a{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 25px;
+            color: white;
+            font-size: 1.75em;
+            text-decoration: none;
+            padding: 23px 25px;
+        }
+        header ul li a:hover{
+            background-color: rgb(228,66,37);
+        }
+        header ul li ul{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 200px;
+            background-color: #21323a;
+            display: none;
+        }
+        header ul li:hover >ul{
+            display: block;
+        }
+        header ul li ul li{
+            position: relative;
+            width: 100%;
+            border: 1px solid rgba(0,0,0,0.2);
+        }
+        header ul li ul li ul{
+            position: absolute;
+            top: 0;
+            left: 200px;
+        }
+        header ul li ul li ul li{
+            position: relative;
+            width: 100%;
+            border: 1px solid rgba(0,0,0,0.2);
+        }
+        header ul li ul li ul li ul{
+            top: 0;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a>
+                    <ul>
+                        <li><a href="#">ptoduct-1</a></li>
+                        <li><a href="#">ptoduct-12</a></li>
+                        <li><a href="#">ptoduct-22</a></li>
+                        <li><a href="#">ptoduct-221</a>
+                            <ul>
+                                <li><a href="#">ptoduct-22</a></li>
+                                <li><a href="#">ptoduct-22</a></li>
+                                <li><a href="#">ptoduct-22</a></li>
+                                <li><a href="#">ptoduct-22</a>
+                                    <ul>
+                                        <li><a href="#">ptoduct-22</a></li>
+                                        <li><a href="#">ptoduct-22</a></li>
+                                        <li><a href="#">ptoduct-22</a></li>
+                                        <li><a href="#">ptoduct-22</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
