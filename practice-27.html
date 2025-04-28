@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: antiquewhite;
+            height: 50px;
+            margin-top: 0px;
+            
+        }
+        li{
+            text-decoration: none;
+            list-style: none;
+            display: inline;
+            margin-left: 30px;
+            font-size: 40px;
+        }
+        ul li:before{
+            position: absolute;
+         content: '';
+         background: rgba(0,0,0,.1);
+         transform-style: preserve-3d;
+         transform: translate(-50%,-50%) scale(0);
+         transition: 1.5s cubic-bezier(.43,1.91,.35,.74);
+         z-index: -1;
+        }
+        ul li:after{
+            position: absolute;
+         content: '';
+         background: #ff5f5f;
+         transform-style: preserve-3d;
+         transform: scale(0) rotateY(0deg) skew(10deg);
+         transition: 1.5s cubic-bezier(.43,1.91,.35,.74);
+         z-index: -1;
+         border-radius: 50%;
+         top: 50%;
+         left: 50%;
+        }
+        ul:hover li:before{
+            transform: scale(1.2) rotateY(360deg) skew(10deg);
+        }
+        ul:hover li:before{
+            transform: translate(-50%,-50%) scale(1.2);
+        }
+        li:hover{
+            color: #fff;
+            transform-style: preserve-3d;
+         transform: scale(0) rotateY(0deg) skew(10deg);
+         transition: 1.5s cubic-bezier(.43,1.91,.35,.74);
+         background: #ff5f5f;
+         z-index: -1;
+         border-radius: 50%;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Sifat</li>
+            <li>Aminul</li>
+            <li>Rasel</li>
+            <li>Jirjir</li>
+            <li>Tomato</li>
+        </ul>
+    </header>
+</body>
+</html>

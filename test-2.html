@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        legend{
+            text-align: center;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        p{
+            width: 150px;
+            display: inline-block;
+            margin-left: 50px;
+            
+        }
+        button{
+            margin-left: 50px;
+            border-radius: 5px;
+            border-color: tomato;
+
+        }
+        button:hover{
+            background-color: tomato;
+            color: white;
+            transform: scale(1.01);
+        }
+        form{
+            background-color: rgb(248, 238, 220);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend>Student Registration Form</legend>
+                <p>ID:</p>
+                <input type="number">
+                <br>
+                <p>Name:</p>
+                <textarea name="" id=""></textarea>
+                <br>
+                <p>Email:</p>
+                <input type="text">
+                <br>
+                <p>Round:</p>
+                <select name="" id="">
+                    <option value="">65</option>
+                    <option value="">66</option>
+                    <option value="">67</option>
+                    <option value="">68</option>
+                </select>
+                <br>
+                <p>Gender:</p>
+                <input type="radio" id="k" name="c"> <label for="k">Male</label>
+                <input type="radio" id="s" name="c"> <label for="s">Female</label>
+                <input type="radio" id="n" name="c"> <label for="n">Others</label>
+                <br>
+                <p>Eduvation:</p>
+                <input type="checkbox" id="ll"> <label for="ll">SSC</label>
+                <input type="checkbox" id="ll"> <label for="ll">HSC</label>
+                <br><br>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
