@@ -7,73 +7,97 @@
     <style>
         body{
             margin: 0;
+            padding: 0;
         }
-    .header{
-        width: 100%;
-        height: 60px;
+    header{
+        
         background-color: rgb(7, 7, 112);
+        display: flex;
+        position: fixed;
+        width: 100%;
+        
+       
     }
-    .part-1{
-        
-        height: 100%;
-        width: 200px;
-        float: left;
-        margin-left: 50px;
-        margin-right: 50px;
-        background-image: url(image/spero.png);
-        
-    }
-    .part-2{
-        
-        height: 100%;
-        width: 400px;
-        float: left;
-        margin-left: 10px;
-    }
-    .part-3{
-        
-        height: 100%;
-        width: 620px;
-        float: left;
-        font-weight: bold;
-        margin-left: 10px;
+    header ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: right;
+       
+       
 
     }
-    .part-3 ul li{
+    header li{
         display: inline-block;
-        float: left;
-        margin-left: 50px;
-    }
-    .part-3 ul li a{
-        text-decoration: none;
-        font-size: x-large;
-        color: antiquewhite;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .sidebar{
-        width: 200px;
-        height: 500px;
-        background-color: rgb(3, 81, 145);
-        float: left;
-    }
-    .content{
-        width: 100%;
-        height: 500px;
-        background-color: rgb(246, 248, 217);  
+        position: relative;
+        margin-right: 20px;
+        
         
     }
-    .footer{
-        width: 100%;
-        height: 100px;
-        background-color: rgb(99, 99, 102);
+    
+    header li a{
+        color: beige;
+        font-size: xx-large;
+        text-decoration: none;
+        display: block;
+        
+        padding: 15px 15px;
     }
+    header li a:hover{
+        background-color: aqua;
+    }
+    header img{
+        width: 150px;
+        height: 100%;
+        
+        
+    }
+    header ul ul{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        /* width: 133px; */
+        background-color: rgba(4, 4, 114, 0.712);
+        display: none;
+    }
+    header ul ul li{
+        display: block;
+    }
+    header ul:hover ul{
+        display: block;
+    }
+ 
+    
+    
+    
+    .sidebar{
+        width: 15%;
+        height: 500px;
+        background-color: rgb(3, 81, 145);
+        
+        position: fixed;
+        top: 65px;
+        
+    }
+    .content{
+        width: 85%;
+        height: 500px;
+        background-color: rgb(246, 248, 217);  
+        margin-top: 68px;
+        overflow: hidden;
+        float: left;
+        margin-left: 205.5px;
+        
+    }
+    
     input{
-        height: 50px;
+        height: 45px;
         width: 250px;
         border-color: antiquewhite;
         border: 3px;
         border-radius: 5px;
-        margin-top: 5px;
+        padding-top: 0;
+        margin-left: 100px;
         
     }
     button{
@@ -81,40 +105,55 @@
         border-color: rgb(215, 217, 250);
         border: 3px;
         border-radius: 5px;
-        height: 50px;
+        height: 45px;
         width: 80px;
-        margin-top: 5px;
+        margin-left: 1px;
+        margin-right: 160px;
         background-color: none;
     }
+    
+    
+    .kkk{
+        display: flex;
+        align-items: center;
+    }
+   
+    
+    
 </style>
 </head>
 <body>
-    <div class="header">
-        <div class="part-1">
-            
-        </div>
-        <div class="part-2">
-            <input type="search" placeholder="Search here">
-            <button>Search</button>
-        </div>
-        <div class="part-3">
+    
+    <header>
+        <div><img src="image/spero.png" alt=""></div>
+        <div class="kkk"><input type="search" placeholder="Search here">
+        <button>Search</button></div>
+        <div class="right-menu">
             <ul>
-                <li><a href="#">Courses</a></li>
+                <li><a href="#">Courses</a>
+                    <ul>
+                        <li><a href="#">WDPF</a></li>
+                        <li><a href="#">WDPF</a></li>
+                        <li><a href="#">WDPF</a></li>
+                        <li><a href="#">WDPF</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Notice</a></li>
-                <li><a href="#">Revew</a></li>
+                <li><a href="#">Review</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </div>
-    </div>
+        </header> 
+    
 
     <div class="sidebar">
 
     </div>
     <div class="content">
-
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio minima reiciendis, odit eligendi unde corrupti cum, aperiam accusamus impedit reprehenderit libero quod earum amet dicta quisquam dolore optio non tenetur voluptate! Ad, et. Sapiente sint quisquam temporibus, consequuntur blanditiis dicta quia alias incidunt, laudantium tempore maxime animi amet facilis iusto, et odit sit? Iure exercitationem soluta ab libero quis rerum dicta, veniam illum temporibus aliquam est eligendi vel quod! Doloremque provident mollitia quos, iste ex perspiciatis cupiditate? Esse corrupti sit id voluptatem iure, quia dolores recusandae in veritatis! Earum quae dignissimos cupiditate iusto totam similique accusantium perspiciatis fugiat tempore nisi soluta qui debitis ex eum nihil iure perferendis libero recusandae, alias velit ipsum ab animi provident. Nostrum, cum distinctio! Quae perferendis atque facere provident dignissimos eligendi beatae possimus quaerat et tenetur, dolorum similique distinctio deleniti maxime. Obcaecati corrupti repellat praesentium enim sequi a, eius, alias nulla laboriosam dignissimos, voluptas modi totam suscipit ea blanditiis nesciunt quisquam mollitia accusantium perspiciatis. Illo, iure delectus ipsa similique aut libero magni voluptate veniam, ab ea, modi natus enim deleniti autem saepe ullam non maxime neque. Sed veniam quos, nostrum quas, ex soluta cum voluptas suscipit facilis repellat recusandae sunt odio nihil repudiandae cumque vel ut vitae omnis saepe nam vero fugit repellendus, ea voluptatem! Commodi, odit! Aspernatur perspiciatis, cumque ex voluptate nesciunt consequuntur, ea a dolor iusto minima placeat in iste! Deleniti laboriosam ut laudantium consequuntur at, suscipit excepturi, vitae eos corporis rem natus exercitationem molestiae dolores! Perferendis, deleniti doloribus? Doloremque temporibus iure aperiam sit sint, at quisquam quaerat debitis laudantium distinctio necessitatibus. Eveniet excepturi fugit explicabo reiciendis distinctio repellendus sit vero beatae, facere dolore a dignissimos sunt ut repellat ipsum at accusamus dolor accusantium. Possimus quibusdam amet dolore aperiam natus, iusto tenetur autem ipsa distinctio beatae quo laudantium. Pariatur recusandae adipisci doloribus iusto molestias totam consequatur doloremque ducimus nesciunt, earum ea dolorem quae fugiat vel perspiciatis? Eaque modi accusantium itaque, aspernatur a aliquam architecto doloribus beatae aperiam ad adipisci sunt, reprehenderit nostrum corporis quam eius at. Ullam, temporibus et a repellat, dolore asperiores, quia optio reiciendis eligendi inventore doloribus nobis nesciunt facilis? Odio, cupiditate nulla ipsam culpa eaque mollitia eveniet quibusdam ut deserunt ea illo voluptatibus nihil quaerat iusto sit reiciendis ducimus explicabo sunt quis nam delectus impedit. Porro facilis eveniet corporis quae quasi repudiandae nostrum? Rerum doloremque asperiores magni placeat sint labore nam, quia minima, excepturi, numquam dignissimos neque amet hic perferendis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, corrupti. Dolore distinctio amet qui, iure assumenda maiores dicta aliquam illum tempora voluptate nam, illo soluta inventore alias ad recusandae? Nihil maxime amet quod quibusdam facere beatae alias aut molestias minus autem, neque dolores illo animi. Est vitae tenetur quo vel. Provident ducimus id enim, iusto rem temporibus vel perferendis, at est, culpa excepturi maxime architecto soluta mollitia inventore consequuntur corrupti nostrum voluptatem? Repellendus, reiciendis excepturi nam iure nisi voluptatem tempore amet perspiciatis exercitationem aliquam sed asperiores, obcaecati quod corrupti, modi voluptates cum? Quisquam repudiandae magnam voluptatum, corporis nobis possimus iure doloribus, nihil quidem incidunt hic ad inventore perspiciatis aspernatur exercitationem quaerat tempore ex totam eveniet laboriosam repellat, architecto dicta! Ad cupiditate qui sequi dignissimos! Repellat earum aut voluptatibus, corporis aperiam ex. Provident ab officiis distinctio reprehenderit doloribus exercitationem hic vitae libero magnam error dicta unde aliquam, porro deleniti! Eveniet aliquam minima, iste architecto adipisci cumque. Sapiente pariatur aut optio inventore perferendis non. Placeat eius sapiente quae, dolorem temporibus ipsa tenetur perferendis doloribus repellendus sequi blanditiis, laborum consequuntur, itaque fugit cum reprehenderit consequatur maxime reiciendis? Culpa, voluptate. Suscipit libero dolorum soluta dolore modi earum fugiat laboriosam recusandae voluptate. Accusantium illo, ut unde sequi amet doloremque odit assumenda sapiente natus dicta nulla inventore. Deleniti fuga tempore saepe cumque vel laudantium eius, libero labore ducimus maxime quod, soluta dolore eos. Excepturi quam, est vitae optio soluta, nesciunt cum ipsa iste odio officia cumque fugit dolores id atque, cupiditate placeat dolorem totam. Corporis, aspernatur nobis fugiat vitae id voluptatibus et natus perferendis a amet illum, qui, dolor architecto! Est quis neque iste veniam mollitia asperiores cumque blanditiis vero, reprehenderit, porro delectus cum error velit recusandae dicta! Quasi, adipisci qui atque eum quia a aliquid sint minima numquam dolores! Dignissimos eius numquam quisquam, ut eaque maiores vel harum molestias velit! Cumque in pariatur tempora eum, quidem amet voluptatibus adipisci repellat dolore et perspiciatis temporibus dolorum repudiandae nulla alias esse ipsum sint magni similique magnam provident. Consectetur ex corporis totam et culpa distinctio consequuntur ut blanditiis iusto, eos qui, quas sapiente laudantium voluptatibus eligendi dolorum ratione at? Perspiciatis sed maxime odit pariatur nostrum dicta harum, odio ullam dolorem voluptate illo, molestiae explicabo voluptatibus repellendus quae quasi. Maiores quas itaque nam velit, error vero culpa eligendi aut expedita facere cumque numquam soluta. Incidunt cumque quo exercitationem nostrum asperiores perferendis vitae similique eum esse consequatur possimus, suscipit eius aut, tempore voluptates, ullam sed laudantium provident cum quas beatae praesentium hic sunt soluta. Sed optio, dicta, molestiae dolores repudiandae sequi minus aut porro, eaque recusandae odio modi cumque ea ex blanditiis. Nesciunt, aperiam dolorum? Ipsum, modi soluta! Velit placeat ipsum vero ea, accusantium quibusdam facilis nobis? Modi aspernatur labore eum impedit natus minima voluptas soluta quis dignissimos, facilis culpa nesciunt aut recusandae ipsam, distinctio molestias. Cumque impedit, ullam cum doloremque dolor aperiam nisi sunt quis ipsam accusantium fugit eveniet debitis nobis! Quo sit, error repudiandae quod voluptate, laudantium eum nobis quidem suscipit culpa, rerum dolores non voluptatem vero qui?
+   
     </div>
-    <div class="footer">
-
-    </div>
+    
 </body>
 </html>
