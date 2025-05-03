@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 28.4% 28.4% 1fr;
+    grid-template-rows: 10% 60% 30%;
+    position: relative;
+    
+
+}
+.content{
+    grid-column: 2/5;
+    
+    background-color: rgb(4, 0, 255);
+}
+.header{
+    grid-column: span 4;
+    background-color: rgb(255, 0, 217);
+    
+}
+.sidebar{
+    grid-row: span 2;
+    background-color: aqua;
+    
+}
+.sub1{
+    
+    background-color: rgb(235, 96, 65);
+}
+.sub2{
+    
+    background-color: rgb(18, 231, 68);
+}
+.sub3{
+    background-color: rgb(223, 131, 11);
+}
