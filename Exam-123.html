@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(1, 15, 1);
+            display: flex;
+        }
+        .h1{
+            width: 150px;
+            height: 60px;
+            
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .h1 img{
+            width: 70px;
+            height: 100%;
+            
+        }
+        .h2{
+            width: 350px;
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+        }
+        .h3{
+            width: 650px;
+            height: 100%;
+            
+            display: flex;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+        }
+        button{
+            width: 55px;
+            height: 35px;
+        }
+        .h3 ul{
+    list-style: none;
+
+}
+.h3 ul li{
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+}
+.h3 ul li ul{
+    position: absolute;
+}
+.h3 ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    padding: 16px 15px;
+}
+.h3 ul li a:hover{
+    background-color: yellow;
+    color: black;
+    transition: 0.7s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="h1">
+            <img src="image/bird-logo.png" alt="">
+
+        </div>
+        <div class="h2">
+            <input type="text" placeholder="Search here">
+            <button>Search</button>
+        </div>
+        <div class="h3">
+            <ul>
+                <li><a href="#">Service</a>
+                    
+                </li>
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

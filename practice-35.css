@@ -10,7 +10,7 @@
 .sidebar{
     width: 15%;
     height: 100vh;
-    background-image: url(image/B-111.gif);
+    background-image: linear-gradient();
     background-size: cover;
     top: 60px;
     position: fixed;
