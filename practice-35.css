@@ -1,55 +1,43 @@
 .header{
-    background-color: rgb(31, 30, 30);
     width: 100%;
     height: 60px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
     display: flex;
-
-}
-.banner{
-    width: 100%;
-    height: 250px;
-    background-image: url(image/banner.jpg);
-    background-size: cover;
-}
-.grid{
-    width: 100%;
-    height: 520px;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    animation-name: rafi;
-    animation-duration: 10s;
-    animation-iteration-count: 50;
-
-}
-@keyframes rafi{
-    0%{background-color: rgb(18, 136, 3);}
-            25%{background-color: rgb(1, 12, 161);}
-            50%{background-color: rgb(138, 5, 138);}
-            75%{background-color: rgb(39, 38, 38);}
-            100%{background-color: rgb(114, 3, 27);}
-}
-.sub{
-    background-color: black;
-    margin: 15px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background-image: url(image/bike-2.png);
-    background-size: 300px 220px;
-    align-items: end;
-
-}
-
-span, button{
-    margin-top: 200px;
-    margin-left: 10px;
-    font-size: large;
     
 }
-button{
-    background-image: linear-gradient(rgb(3, 243, 3), rgb(6, 6, 241));
-    border-radius: 7px;
-    color: white;
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    background-image: url(image/B-111.gif);
+    background-size: cover;
+    top: 60px;
+    position: fixed;
+}
+.content{
+    width: 85%;
+    height: 400px;
+    margin-left: 203px;
+    background-image: url(image/b13.jpg);
+    background-size: cover;
+}
+.pro{
+    height: 615px;
+    width: 85%;
+    margin-left: 203px;
+    background-color: rgb(255, 202, 88);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.sub1{
+    background-color: aqua;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-image: url(image/b02.jpg);
+    background-size: cover;
 }
 .h1{
     height: 60px;
@@ -59,14 +47,13 @@ button{
     display: flex;
     
 }
-.s{
+span{
     color: rgb(100, 202, 202);
     font-size: x-large;
     font-style: italic;
     font-weight: bold;
     margin-top: 20px;
     margin-right: 20px;
-    margin-left: 0;
 }
 
 .h1 img{
@@ -92,7 +79,6 @@ input{
     width: 380px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    
 }
 
 .B1{
@@ -102,7 +88,6 @@ input{
     background-color: orange;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin: 0;
 }
 .h3{
     height: 60px;
@@ -118,8 +103,7 @@ input{
 }
 .h3 ul li{
     display: inline-block;
-    margin-right: 20px;
-    position: relative;
+    margin-right: 25px;
 }
 .h3 ul li a{
     text-decoration: none;
@@ -132,11 +116,4 @@ input{
     background-color: yellow;
     color: black;
     transition: 0.7s;
-}
-.h3 ul li ul{
-    position: absolute;
-    margin-top: 30px;
-}
-.h3 ul li ul li{
-    margin-top: 10px;
 }
