@@ -1,0 +1,30 @@
+.header{
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    height: 60px;
+
+}
+.banner{
+    width: 100%;
+    height: 250px;
+    background-image: url(image/B-122.jpg);
+}
+.grid{
+    width: 100%;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: 2, 1fr;
+    animation-name: rafi;
+    animation-duration: 10s;
+    animation-iteration-count: 50;
+
+}
+@keyframes rafi{
+    0%{background-color: rgb(162, 254, 254);}
+            25%{background-color: rgb(254, 254, 175);}
+            50%{background-color: rgb(173, 252, 173);}
+            75%{background-color: rgb(254, 162, 146);}
+            100%{background-color: rgb(249, 169, 244);}
+}
+.sub
