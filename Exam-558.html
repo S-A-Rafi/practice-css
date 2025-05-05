@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         .header{
             width: 100%;
             height: 60px;
-            background-color: rgb(255, 254, 222);
+            background-color: rgb(253, 243, 99);
             display: flex;
-            border: 1px solid rgb(234, 249, 24);
+            border: 1px solid tomato;
             box-shadow: 4px 4px 10px rgba(165, 165, 165, 0.443);
         }
         .h1{
@@ -41,10 +43,22 @@
         input{
             width: 250px;
             height: 30px;
+            border: 1px solid tomato;
+            background-color: rgb(250, 246, 209);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
         button{
             width: 55px;
-            height: 35px;
+            height: 34px;
+            border: 1px solid tomato;
+            background-color: rgb(250, 246, 209);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            
+        }
+        button i{
+            font-size: 20px;
         }
         .h3 ul{
     list-style: none;
@@ -97,23 +111,15 @@
 } */
 .side{
     width: 15%;
-    height: 600px;
+    height: 550px;
     margin-top: 0px;
-    background-color: rgb(198, 198, 198);
-    animation-name: r;
-    animation-duration: 4s;
-    animation-iteration-count: 50;
+    background-image: linear-gradient(rgba(246, 248, 108, 0.952), rgb(93, 250, 93),rgba(238, 238, 127, 0.836));
+    
     float: left;
     
     
 }
-@keyframes r{
-            0%{background-color: rgb(165, 165, 167);}
-            25%{background-color: rgba(159, 241, 250, 0.861);}
-            50%{background-color: rgba(253, 171, 246, 0.785);}
-            75%{background-color: rgba(250, 245, 117, 0.861);}
-            100%{background-color: rgba(184, 184, 255, 0.89);}
-}
+
 .side ul{
     margin-top: 0;
    padding-left: 0;
@@ -140,30 +146,69 @@
 }
 .content{
     width: 85%;
-    height: 200px;
+    height: 550px;
     float: left;
-    background-color: rgb(23, 31, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(247, 247, 209), rgb(255, 226, 226), rgb(213, 249, 250), rgb(250, 249, 212));
+    
+}
+.con{
+    width: 60%;
+    height: 400px;
 }
 .sub{
     width: 85%;
-    height: 400px;
+    height: 350px;
     float: left;
-    background-image: linear-gradient(rgba(247, 24, 24, 0.753), rgba(252, 252, 64, 0.753), rgba(20, 243, 20, 0.685));
+    background-image: url(image/B-111.gif);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     
 }
 .sub1{
     margin: 10px;
-    background-image: url(image/bird-logo.png);
+    background-image: url(image/m-11.jpg);
     background-size: cover;
+    box-shadow: 5px 5px 10px rgba(165, 165, 165, 0.443);
 }
 .footer{
     width: 100%;
     height: 100px;
+    float: left;
     background-color: rgba(53, 52, 52, 0.692);
 }
+.p1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(250, 246, 35);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 40px;
+    
+
+}
+.p2{
+    text-align: center;
+    font-size: large;
+}
+table{
+    
+    width: 80%;
+    height: 300px;
+    border-spacing: 0;
+    margin-left: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(128, 128, 128, 0.534);
+}
+tr:nth-child(odd){
+    background-color: #75eef7;
+}
+    
+    
+
 
 
 
@@ -178,10 +223,10 @@
         <div class="h3">
             <ul>
                 <li><a href="#">About us</a></li>
-                <li><a href="#">Features</a>
+                <li><a href="Exam-557.html">Features</a>
                     <div class="pp">In today's digital age, having access to a dynamic and feature-rich IT platform is essential for staying ahead in the tech world. Our IT site is designed to cater to the needs of learners, developers, and tech professionals by offering a comprehensive suite of tools and resources. Here’s a look at the key features that make our platform stand out:</div>
                 </li>
-                <li><a href="#">Contuct us</a>
+                <li><a href="Exam-558.html">Contuct us</a>
                     <ul> 
                         <li>Facebook</li>
                         <li>twiter</li>
@@ -194,14 +239,14 @@
         </div>
         <div class="h2">
             <input type="text" placeholder="Search here">
-            <button>Search</button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         
     </div>
     <div class="side">
         <ul>
             <br>
-            <li><a href="#">Home</a></li><br>
+            <li><a href="Exam-556.html">Home</a></li><br>
             <li><a href="#">Search book</a></li><br>
             <li><a href="#">Upload book</a></li><br>
             <li><a href="#">The news</a></li><br>
@@ -210,20 +255,44 @@
         </ul>
     </div>
         <div class="content">
+            <div class="con">
+            <div class="p1">
+                Contact us
+            </div>
+            <table>
+                <tr>
+                    <td>Mobile</td>
+                    <td>+8801866599965</td>
+                </tr>
+                <tr>
+                    <td>Whatsapp</td>
+                    <td>+8801866599965</td>
+                </tr>
+                <tr>
+                    <td>Twiter</td>
+                    <td>https://twiter/rafi/</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>https://Instagram/rafi/</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>https://Facebook/rafi/</td>
+                </tr>
+                <tr>
+                    <td>e-mail</td>
+                    <td>sarafioffice@gmail.com</td>
+                </tr>
+                
+            </table>
+        </div>
+        </div>
+       
+        
+        <div class="footer">
 
         </div>
-        <div class="sub">
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-            <div class="sub1"></div>
-        </div>
-        
-        
     
 </body>
 </html>
